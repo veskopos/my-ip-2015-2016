@@ -62,10 +62,10 @@ $(document).ready(function() {
  			method: "PUT",
  			contentType: "application/json; charset=utf-8",
  			data: JSON.stringify(task),
- 			dataType: "json",
-			success: function() { 
+ 			dataType: "json"
+		/*	success: function() { 
 				window.location.reload();
-			}
+			}*/
  		});
  	}
  	
@@ -79,19 +79,19 @@ $(document).ready(function() {
 			method: "POST",
 			contentType: "application/json; charset=utf-8",
 			data: JSON.stringify(task),
-			dataType: "json",
-			success: function() { 
+			dataType: "json"
+		/*	success: function() { 
 				window.location.reload();
-			}
+			} */
 		});
 	}
 
 	function deleteTask(taskId) {
 		$.ajax(taskEndpoint(taskId), {
 			method: "DELETE",
-			success: function() { 
+		/*	success: function() { 
 				window.location.reload();
-			}
+			} */
 		});
 	}
 
@@ -108,22 +108,30 @@ $(document).ready(function() {
 
 		//----------Edit function-----------------
 		$("#readPanel .task-action-ok").click(function() {
- 			showPanel("updatePanel");
+			showPanel("updatePanel");
  			readTask(taskId).then(form);
+ 			reloadTasks();
  		});
   		
   		$("#updatePanel .task-action-ok").click(function() {
   			editingTask(taskId);
+  			reloadTasks();
+  			showPanel("emptyPanel");
+  			reloadTasks();
   			//window.location.reload();
 		});
 
 		//----------Add function------------------
 		$("#addTaskButton").click(function() {
 			showPanel("createPanel");
+			reloadTasks();
 		});
 
 		$("#createPanel .task-action-ok").click(function() {
 			addingTask();
+			reloadTasks();
+			showPanel("emptyPanel");
+			reloadTasks();
 			//window.location.reload();
 		});
 		
@@ -131,7 +139,9 @@ $(document).ready(function() {
 		$(".task-action-remove").click(function() {
 			deleteTask(taskId);
 			//window.location.reload();
+			
 			showPanel("emptyPanel");
+			reloadTasks();
 		});
 	}
 
