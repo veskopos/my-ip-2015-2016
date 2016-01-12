@@ -1,0 +1,24 @@
+{
+  "pois": [
+    {
+      "label": "Vitosha",
+      "id": 1
+    },
+    {
+      "label": "Rila",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "label": "Sofia"
+    },
+    {
+      "id": 4,
+      "label": "Plovdiv"
+    },
+    {
+      "label": "Rila",
+      "id": 5
+    }
+  ]
+}
