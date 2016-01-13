@@ -4,6 +4,7 @@ $(document).ready(function() {
 	console.log($("#footer a.tu").attr("title"));
 	console.log($("#col1 p").text());
 	$("#menu-top-level-menu").append("<li id=menu-item-1234><a href = #>new button");
+	$("#footer").append("<div id = dynamiccontent>");
 	
 	//alert("Under Construction!");
 });
