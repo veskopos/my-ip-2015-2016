@@ -28,7 +28,7 @@ body.school {margin: 0px; color: #333; font-family: 'Helvetica Neue', Arial, san
 #header ul li a {display: inline-block; padding: 10px; font-size: 12px; font-weight: bold; text-transform: uppercase; color: #666; text-decoration: none; background: #fff; margin-top: 10px; letter-spacing: 1px; line-height: 12px;}
 #header ul li a:hover {color: #fff; background: #3d94e0;}
 
-#searchform {float: right; height: 30px; margin: 12px 15px 10px 15px;}
+#searchform {float: right; height: 30px; margin: 12px 12px 10px 12px;}
 #searchform .search {padding: 5px 7px  !important; font-size: 13px; font-family: 'Helvetica Neue', Arial, sans-serif; border: 1px solid #ccc; background: #fff; margin-right: 0px; height: 18px !important; vertical-align: top;}
 #searchform .search:focus {background: #f6f6f6; outline: none;}
 #searchform .sbutton {background: url(search.png) center center no-repeat; width: 30px; height: 30px  !important; border: 1px solid #ccc; text-indent: -9999px; cursor: pointer;  margin-left: -5px; vertical-align: top;}
