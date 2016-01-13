@@ -1,0 +1,288 @@
+/*@import url("edufest2012.css");*/
+
+/*
+Theme Name: ELSYS
+Theme URI: http://elsys-bg.org/
+Description: The default WordPress theme based on the famous <a href="http://binarybonsai.com/kubrick/">Kubrick</a>.
+Version: 1.0
+Author: Julian Kuntorov
+Author URI: http://juliank.eu/
+
+       Version 1.0 of the new website. If you have any ideas or bug reports, contact me at julian.kuntorov@gmail.com .
+*/
+
+/* main*/
+body.home {margin: 0px; color: #333; font-family: 'Helvetica Neue', Arial, sans-serif; background: url(homepic.jpg) center 55px no-repeat;}
+body.inner {margin: 0px; color: #333; font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #fff; padding: 0px;}
+body.school {margin: 0px; color: #333; font-family: 'Helvetica Neue', Arial, sans-serif; background: #fff;}
+.inscreen {width: 960px; margin: 0 auto 0 auto; height: auto;}
+
+/* header */
+#header {background: #fff; width: 960px; margin: 0 auto 0 auto; height: 55px; display: block;}
+#header h1 {margin: 0px; padding: 0px; float: left; position: relative;}
+#header #logo {display: block; width: 55px; height: 30px !important; background: url(logo.png) top left no-repeat; text-indent: -9999px; padding: 0px; margin: 13px 15px 12px 15px;}
+#header #logo:hover {background: url(logoh.png) top left no-repeat;}
+#xmas-hat {background: url(images/christmas-hat-small.png) top left no-repeat; position: absolute; width: 18px; height: 21px; display: block; top: 7px; left: 8px; display: none !important;}
+#header ul {list-style: none; float: left; margin: 0px; padding: 0px; display: inline-block; height: 55px; margin-left: 1}
+#header ul li {display: inline;margin: 0px; padding: 0px;}
+#header ul li a {display: inline-block; padding: 10px; font-size: 12px; font-weight: bold; text-transform: uppercase; color: #666; text-decoration: none; background: #fff; margin-top: 10px; letter-spacing: 1px; line-height: 12px;}
+#header ul li a:hover {color: #fff; background: #3d94e0;}
+
+#searchform {float: right; height: 30px; margin: 12px 15px 10px 15px;}
+#searchform .search {padding: 5px 7px  !important; font-size: 13px; font-family: 'Helvetica Neue', Arial, sans-serif; border: 1px solid #ccc; background: #fff; margin-right: 0px; height: 18px !important; vertical-align: top;}
+#searchform .search:focus {background: #f6f6f6; outline: none;}
+#searchform .sbutton {background: url(search.png) center center no-repeat; width: 30px; height: 30px  !important; border: 1px solid #ccc; text-indent: -9999px; cursor: pointer;  margin-left: -5px; vertical-align: top;}
+#searchform .sbutton:hover {background-color: #f1f1f1;}
+#searchform .sbutton:active {background-color: #eee;}
+
+/* subnav */
+.subnav-bg {background-color: #eee; width: 100%;}
+ul.subnav {width: 960px; margin: 0 auto; background-color: #eee; list-style: none; padding-left: 0px;}
+ul.subnav li {display: inline; margin: 0px; padding: 0px;}
+ul.subnav li a {display: inline-block; padding: 10px; text-align: center; font-size: 11px; color: #555; text-transform: uppercase; text-decoration: none; font-weight: bold; margin: 0px; line-height: 11px;}
+ul.subnav li.current_page_item a {background-color: #f6f6f6;}
+ul.subnav li a:hover {background-color: #999; color: #fff;}
+#menu-admission-menu {padding: 0;}
+
+/* thirdnav */
+.thirdnav-bg {background-color: #f6f6f6; width: 100%;}
+ul.thirdnav {width: 960px; margin: 0 auto; background-color: #f6f6f6; list-style: none; padding-left: 0px;}
+ul.thirdnav li {display: inline; margin: 0px; padding: 0px;}
+ul.thirdnav li a {display: inline-block; padding: 10px; text-align: center; font-size: 11px; color: #555; text-transform: uppercase; text-decoration: none; font-weight: bold; margin: 0px; line-height: 11px;}
+ul.thirdnav li.current_page_item a {background-color: #f9f9f9;}
+ul.thirdnav li a:hover {background-color: #ccc; color: #fff;}
+
+/* footer */
+#footer {width: 930px; margin: 0 auto 0 auto; font-size: 12px; color: #777; border-top: 1px solid #ccc; padding: 15px;}
+#footer a {color: #777; font-weight: bold; text-decoration: none;}
+#footer a.tu {display: block; text-indent: -9999px; width: 25px; height: 26px; background: url(tu.png) no-repeat top left; float: right; cursor: pointer; margin-top: -6px;}
+#footer a.tu:hover {background: url(tu-h.png) no-repeat top left;}
+#footer a:hover {color: #333;}
+
+/* home */
+#home {width: 960px; margin: 320px auto 0 auto; padding: 20px;}
+#home h2 {margin-bottom: 10px; font-size: 16px}
+#home h2 a {font-size: 17px; font-weight: bold; color: black; padding: 0px 0px 3px 0px; border-bottom: 2px solid #ccc; display: block; text-decoration: none;}
+#home h2 a:hover {color: #337dbe;  border-bottom: 2px solid  #bbb;}
+#home h2 a .h2arr {display: none;}
+#home h2 a:hover .h2arr {display: inline;}
+#home p {font-size: 13px; line-height: 21px; padding-top: 0px; margin: 0px;}
+#home p a {font-weight: bold; text-decoration: none; color: #000;}
+#home p a:hover {color: #337dbe;}
+#home #col1 {width: 220px; margin: 0 10px 0 10px; float: left;}
+#home #col2 {width: 220px; margin: 0 10px 0 10px; float: left;}
+#home #col3 {width: 220px; margin: 0 10px 0 10px; float: left;}
+#home #admissionstatus {margin-top: 10px; padding-top: 10px; font-size: 12px; border-top: 1px dotted #ccc; display: block;}
+#home #admissionstatus strong {font-weight: bold; color: #cb2947;}
+#home #admissionstatus a {font-weight: bold; color: #333; text-decoration: none;}
+#home #col4 {width: 220px; margin: 0 10px 0 10px; float: left;}
+#home .latest {list-style: none; padding-left: 0; margin-top: -5px; margin-bottom: 5px;}
+#home .latest li {border-contacts: 1px solid #eee; }
+#home .latest li a {padding: 5px 4px; font-size: 12px; padding-right: 30px; display: block; line-height: 18px; text-decoration: none; color: #444; background: url(arrow.png) right center no-repeat; font-weight: normal !important; border-bottom: 1px dotted #ccc;} 
+#home .latest li a:hover {color: #222; background: url(arrowh.png) right center no-repeat; border-bottom: 1px dotted #666;}
+
+#mc_embed_signup {font-size: 11px;}
+.mc-field-group {padding-bottom: 7px;}
+.mc-field-group label {padding-bottom: 1px; display: block;}
+.mc-textbox {font-size: 12px; background: #f6f6f6; border: 1px solid #ddd; padding: 3px; display: block; width: 200px; border-radius: 3px;}
+.mc-textbox:focus {background: #fff; box-shadow: 0px 0px 5px #ccc; border: 1px solid #ccc; outline: none;}
+#mc_embed_signup .button {background: #3D94E0; border: 1px solid #2478c2; padding: 5px; color: #fff; font-weight: bold; font-size: 11px; border-radius: 3px; cursor: pointer;}
+#mc_embed_signup .button:hover {background: #2478c2; border: 1px solid #1E5781;}
+#mc_embed_signup .button:active {background: #369; border: 1px solid #1E5781;}
+#mc_embed_signup .button:focus {background: #2478c2; border: 1px solid #1E5781; box-shadow: 0px 0px 5px #ccc; outline: none;}
+
+/* content */
+#content {width: 960px; margin: 0px auto 0 auto; padding-top: 20px; background-color: #fff;}
+#content .title {font-size: 36px; font-weight: normal; padding-bottom: 5px; border-bottom: 3px solid #ccc; margin: 10px 30px 0px 30px;}
+#content .article {margin-bottom: 30px; margin-top: 20px;}
+#content h2 {margin-bottom: 10px; font-size: 16px}
+#content h2 a {font-size: 18px; font-weight: normal; line-height: 26px; color: black; padding: 0px 0px 3px 0px; border-bottom: 2px solid #ccc; display: block; text-decoration: none;}
+#content h2 a:hover {color: #337dbe;  border-bottom: 2px solid  #bbb;}
+#content .postimg {width: 630px; margin: 0px;}
+#content p, #content ol, #content ul {font-size: 13px; line-height: 21px; padding-top: 0px; margin: 5px 0 0 0;}
+#content p a, #content ol a, #content ul a {font-weight: bold; text-decoration: none; color: #000;}
+#content p a:hover , #content ol a:hover , #content ul a:hover {color: #337dbe;}
+.article table {margin: 15px 0; border: 1px solid #ccc; border-collapse: collapse; font-size: 13px; width: 100%;}
+.article td {padding: 5px; border: 1px solid #ccc;}
+.article th {padding: 5px; border: 1px solid #ccc; background: #f6f6f6; text-align: left; font-weight: bold;}
+
+.single .recommendation {border-bottom: none !important;}
+.recommendation {border-bottom: 1px dotted #ccc; padding-bottom: 20px;}
+.recommendation .person-info {float: left; width: 150px; clear: left; padding-right: 20px; font-size: 12px; padding: 15px; background: #fbfbfb; border: 1px solid #eee;}
+.recommendation img {border: 1px solid #ddd; margin-bottom: 15px !important; width: 150px !important; height: 150px !important;}
+.recommendation h3 {font-size: 14px !important; margin-top: 0 !important; margin-bottom: 5px !important; padding: 0 !important; line-height: 150%;}
+.recommendation .person-occupation {line-height: 150%;}
+.recommendation .person-year {line-height: 150%;}
+.recommendation a {color: #333; text-decoration: none;}
+.recommendation .recommendation-content {margin-left: 200px;}
+
+#content .meta {color: #999; font-size: 12px; margin-top: 10px; margin-bottom: 30px;}
+#content .meta a {font-weight: bold; text-decoration: none; color: #999;}
+#content .meta a:hover {color: #333;}
+
+#content .pagenav a {color: #999; font-weight: bold; text-decoration: none; font-size: 13px;}
+#content .pagenav a:hover {color: #337dbe;}
+
+#content #maincol {width: 630px; margin: 0 0px 0 30px; float: left;}
+
+#content #sidebar {width: 220px; margin: 0 30px 0 30px; float: left;}
+#sidebar .rssfeed {width: 100px; height: 20px; background: url(images/rss.png) top left no-repeat; font-size: 15px; color: #ccc; font-weight: bold; text-decoration: none; display: block; padding-left: 25px; margin-left: auto; margin-right: 0px;}
+#sidebar .rssfeed:hover {background: url(images/rssh.png) top left no-repeat; color: #ff9c00;}
+#sidebar .last5 {list-style: none; padding-left: 0; margin-top: 0; }
+#sidebar .last5 li {border-contacts: 1px solid #eee; }
+#sidebar .last5 li.title {padding-left: 0; margin: 0; font-size: 18px; font-weight: normal; line-height: 26px; color: black; border-bottom: 2px solid #ccc; width: 100%;}
+.last5 li a {padding: 7px 5px; font-size: 12px; padding-right: 30px; display: block; line-height: 18px; text-decoration: none; color: #666; background: url(images/arrow.png) right center no-repeat; font-weight: normal !important; border-bottom: 1px dotted #ccc;} 
+#sidebar .last5 li a:hover {color: #333; background: url(images/arrowh.png) right center no-repeat; border-bottom: 1px dotted #666;} 
+#sidebar .sidebarblock {margin-bottom: 15px;}
+
+ .single {margin-top: 300px; margin: 0px auto;}
+ .single .title a {color: #333; text-decoration: none;}
+ .single .title a:hover {color: #337dbe;}
+ .single .article p, .single .article ol, .single .article ul, .single .article a { font-size: 14px;}
+ .single .article img, .single .article object {margin-left: 0px; margin-top: 15px; margin-bottom: 0px; width: 900px; text-align: center; border: 0px;}
+ .single .article a img {border: none;}
+ .single .article .imagedesc {margin: 0 0 0 0px; padding: 10px 30px 10px 30px; width: 840px; display: block; background-color: #f8f8f8; color: #333; font-size: 13px;}
+ .single p {font-size: 14px !important; line-height: 23px !important;}
+.headimg {margin: 0 auto; display: block; width: 900px; margin-bottom: 0px;}
+
+#wcol1 {width: 410px; margin: 0 30px 0 40px; float: left;}
+#wcol2 {width: 410px; margin: 0 40px 0 30px; float: left;}
+.textpadding {padding: 0 40px;}
+.h2padding {padding-left: 40px; padding-top: 20px;}
+
+/* admission */
+body.admission {margin: 0px; color: #333; font-family: 'Helvetica Neue', Arial, sans-serif; background: #fff;}
+#admission .inscreen {background-color: #fff; margin-top: 10px;}
+.admission h2 {font-size: 17px; line-height: 26px; padding: 40px 20px 10px 40px; font-weight: bold;}
+.admission h3 {font-size: 20px; font-weight: normal; line-height: 30px;}
+.admission p, #admission ol, #admission ul {font-size: 14px; line-height: 21px; text-align: justify; font-family: 'Helvetica Neue', Arial, sans-serif;}
+.admission ol, #admission ul {padding-left: 10px;}
+#admission #formula {text-indent: -9999px; background: url(images/bal.png) no-repeat top left; width: 415px; height: 260px; display:block;}
+#why .profile {width: 410px;}
+#why .top {border-bottom: 2px solid #ccc; height: 160px;}
+#why .top img {float: left; padding: 0 15px 10px 0;}
+#why .top h3 {font-weight: normal; font-size: 18px; margin: 0px; line-height: 30px;}
+#why .top p {color: #999; margin: 0px; line-height: 24px; border-bottom: none; padding: 0px;}
+#why .text {padding: 15px; border-bottom: 1px dotted #ccc; margin-bottom: 15px;}
+
+/* school pages */
+.school h2 {font-weight: normal; font-size: 24px; line-height: 32px;}
+.school h3 {font-size: 18px; font-weight: normal; line-height: 26px; margin-bottom: 0px; margin-top: 20px; padding: 0px;}
+.school p, .school ol, .school ul  {line-height: 22px; font-size: 14px;}
+.school p.box {background-color: #f6f6f6; padding: 15px; border: 1px solid #eee;}
+.school p a, .school ol a, .school ul a {font-weight: bold; text-decoration: none; color: #000;}
+.school p a:hover , .school ol a:hover , .school ul a:hover {color: #337dbe;}
+.school .inscreen {margin-top: 30px;}
+#education #wcol1 img {margin-top: 10px; margin-bottom: 15px;}
+#contacts #map {width: 410px; height: 500px;}
+#robotics #wcol2 img {margin-bottom: 15px;}
+#ciscoacademy #photocontainer {list-style: none; padding: 40px; width: 880px; display: block; clear: both; margin-top: 15px;}
+.polaroid {padding: 10px; display: inline-block; ; background: #fafafa; border: 1px solid #f6f6f6; margin-bottom: 15px; margin-top: 0px; margin-left: 0px; width: 410px; text-align: center;}
+#ciscoacademy #photocontainer img {margin: 0; vertical-align: top; width: 400px !important;}
+#ciscoacademy #photocontainer .description {padding: 10px 0 0 0; margin: 0px;}
+#ciscoacademy #photocontainer h3 {font-weight: bold; font-size: 13px; display: inline; margin: 0;}
+#ciscoacademy #photocontainer p {font-size: 13px; text-align: center; vertical-align: top; margin: 0;}
+
+.polp {padding-top: 10px; line-height: 13px;}
+#ciscoacademy #photocol1 {width: 430px; float: left; vertical-align: top; display: block;}
+#ciscoacademy #photocol2 {width: 430px; float: left; padding-left: 20px; vertical-align: top; display: block; margin-top: -10px;}
+#students .inscreen {padding-left: 40px; padding-right: 40px; width: 920px;}
+#students h3 {margin-bottom: 10px;}
+#students p {margin-top: 0px;}
+#students .polp {margin-top: 10px;}
+#students .elsysi {background: #eee; padding-top: 20px; padding-bottom: 20px; margin-left: -40px;}
+#students .elsysi h3 {margin-left: 45px;}
+#students .elsysi img {margin-left: -45px;}
+#students .elsysi p {margin-left: 45px;}
+
+
+/* friends */
+#friends ul#grid {width: 960px; list-style: none;}
+#friends ul#grid li {display: inline-block;}
+#friends ul#grid li a {width: 290px; height: 150px; display: block; text-indent: -9999px;}
+#smartcom {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/smartcom.jpg) center center no-repeat;}
+#bbs {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/bbs.jpg) center center no-repeat;}
+#cisco {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/cisco.jpg) center center no-repeat;}
+#sap {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/sap.jpg) center center no-repeat;}
+#ti {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/texas.jpg) center center no-repeat;}
+#haemimont {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/haemimont.jpg) center center no-repeat;}
+#vivacom {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/vivacom.jpg) center center no-repeat;}
+#vmware {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/vmware.jpg) center center no-repeat;}
+#ecocoms {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/ecocoms.jpg) center center no-repeat;}
+#telelink {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/telelink.jpg) center center no-repeat;}
+#jc {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/johnson.jpg) center center no-repeat;}
+#tdc {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/3dc.jpg) center center no-repeat;}
+#rv {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/realvision.jpg) center center no-repeat;}
+#most {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/most.jpg) center center no-repeat;}
+#vali {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/vali.jpg) center center no-repeat;}
+#otb {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/otb.jpg) center center no-repeat;}
+#alimex {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/alimex.jpg) center center no-repeat;}
+#smartcom:hover {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/smartcom-h.jpg) center center no-repeat;}
+#bbs:hover {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/bbs-h.jpg) center center no-repeat;}
+#cisco:hover {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/cisco-h.jpg) center center no-repeat;}
+#sap:hover {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/sap-h.jpg) center center no-repeat;}
+#ti:hover {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/texas-h.jpg) center center no-repeat;}
+#haemimont:hover {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/haemimont-h.jpg) center center no-repeat;}
+#vivacom:hover {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/vivacom-h.jpg) center center no-repeat;}
+#vmware:hover {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/vmware-h.jpg) center center no-repeat;}
+#ecocoms:hover {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/ecocoms-h.jpg) center center no-repeat;}
+#telelink:hover {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/telelink-h.jpg) center center no-repeat;}
+#jc:hover  {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/johnson-h.jpg) center center no-repeat;}
+#tdc:hover {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/3dc-h.jpg) center center no-repeat;}
+#rv:hover {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/realvision-h.jpg) center center no-repeat;}
+#most:hover {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/most-h.jpg) center center no-repeat;}
+#vali:hover {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/vali-h.jpg) center center no-repeat;}
+#otb:hover {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/otb-h.jpg) center center no-repeat;}
+#alimex:hover {background: url(http://www.elsys-bg.org/wp-content/themes/elsys/images/sponsors/alimex-h.jpg) center center no-repeat;}
+
+/* admission 2010 */
+#admission2010 table {width: 640px; table-layout: fixed; border-spacing: 0; font-size: 14px; border: 2px solid #eee; color: #333; margin-top: 10px;}
+#admission2010 table tr:hover {background-color: #ddd; border-bottom: 1px solid #000;}
+#admission2010 table td {padding: 3px 5px 3px 5px; border-bottom: 1px solid #eee; line-height: 22px;}
+#admission2010 td:first-child {width: 20px; text-align: center;}
+#admission2010 #final-result td {border-bottom: 4px solid red !important;}
+#admission2010 tr.headrow {font-weight: bold; background: #eee; padding: 5px; line-height: 30px;}
+#admission2010 tr.headrow:hover {background: #eee; color: #333;}
+#admission2010 .odd{background-color: #fff} 
+#admission2010 .even{background-color: #f6f6f6;}
+#admission2010 #legendWrapper {position: absolute; margin-left: 670px; width: 200px; margin-top: -30px;}
+#admission2010 #legend	{background-color: #f6f6f6; width: 200px; padding: 15px; border: 2px solid #eee; margin-top: 30px; position: absolute; top: 0;}
+#admission2010 #legend h3 {font-size: 15px; margin: 0px; font-weight: bold;}
+#admission2010 #legend p {font-size: 13px; line-height: 22px; margin: 10px 0 0 0; text-align: left;}
+#admission2010 #legend.fixed {position: fixed; top: 15px;}
+#admission2010 #important {padding: 5px 40px 10px 40px; margin-top: -10px; margin-bottom: 20px; background: #fbfbfb; border: 1px solid #eee;}
+
+/* admission 2011 */
+#admission2011 table {width: 640px; table-layout: fixed; border-spacing: 0; font-size: 14px; border: 2px solid #eee; color: #333; margin-top: 10px;}
+#admission2011 table tr:hover {background-color: #ddd; border-bottom: 1px solid #000;}
+#admission2011 table td {padding: 3px 5px 3px 5px; border-bottom: 1px solid #eee; line-height: 22px;}
+#admission2011 td:first-child {width: 20px; text-align: center;}
+#admission2011 #final-result td {border-bottom: 4px solid red !important;}
+#admission2011 tr.headrow {font-weight: bold; background: #eee; padding: 5px; line-height: 30px;}
+#admission2011 tr.headrow:hover {background: #eee; color: #333;}
+#admission2011 .odd{background-color: #fff} 
+#admission2011 .even{background-color: #f6f6f6;}
+#admission2011 #legendWrapper {position: absolute; margin-left: 670px; width: 200px; margin-top: -30px;}
+#admission2011 #legend	{background-color: #f6f6f6; width: 200px; padding: 15px; border: 2px solid #eee; margin-top: 30px; position: absolute; top: 0;}
+#admission2011 #legend h3 {font-size: 15px; margin: 0px; font-weight: bold;}
+#admission2011 #legend p {font-size: 13px; line-height: 22px; margin: 10px 0 0 0; text-align: left;}
+#admission2011 #legend.fixed {position: fixed; top: 15px;}
+#admission2011 #important {padding: 5px 40px 10px 40px; margin-top: -10px; margin-bottom: 20px; background: #fbfbfb; border: 1px solid #eee;}
+
+/* admission 2012 */
+#admission2012 table {width: 640px; table-layout: fixed; border-spacing: 0; font-size: 14px; border: 2px solid #eee; color: #333; margin-top: 10px;}
+#admission2012 table tr:hover {background-color: #ddd; border-bottom: 1px solid #000;}
+#admission2012 table td {padding: 3px 5px 3px 5px; border-bottom: 1px solid #eee; line-height: 22px;}
+#admission2012 td:first-child {width: 20px; text-align: center;}
+#admission2012 #final-result td {border-bottom: 4px solid red !important;}
+#admission2012 tr.headrow {font-weight: bold; background: #eee; padding: 5px; line-height: 30px;}
+#admission2012 tr.headrow:hover {background: #eee; color: #333;}
+#admission2012 .odd{background-color: #fff} 
+#admission2012 .even{background-color: #f6f6f6;}
+#admission2012 #legendWrapper {position: absolute; margin-left: 670px; width: 200px; margin-top: -30px;}
+#admission2012 #legend	{background-color: #f6f6f6; width: 200px; padding: 15px; border: 2px solid #eee; margin-top: 30px; position: absolute; top: 0;}
+#admission2012 #legend h3 {font-size: 15px; margin: 0px; font-weight: bold;}
+#admission2012 #legend a {font-size: 13px; font-weight: bold; color: #333;}
+#admission2012 #legend p {font-size: 13px; line-height: 22px; margin: 10px 0 0 0; text-align: left;}
+#admission2012 #legend.fixed {position: fixed; top: 15px;}
+#admission2012 #important {padding: 5px 40px 10px 40px; margin-top: -10px; margin-bottom: 20px; background: #fbfbfb; border: 1px solid #eee;}
