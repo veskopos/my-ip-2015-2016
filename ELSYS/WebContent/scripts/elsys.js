@@ -6,6 +6,7 @@ $(document).ready(function() {
 	$("#menu-top-level-menu").append("<li id=menu-item-1234><a href = #>new button");
 	$("#footer").append("<div id = dynamiccontent>");
 	$("#dynamiccontent").append("<input id=textinput>");
+	$("#dynamiccontent").append("<button id=addbutton>Button</button>");
 	
 	//alert("Under Construction!");
 });
