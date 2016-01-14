@@ -9,6 +9,7 @@ $(document).ready(function() {
 	$("#dynamiccontent").append("<button id=addbutton>Button</button>");
 	$("#dynamiccontent").append("<ul id=posts>");
 	$("#menu-item-1234").click(function(){
+		$(".inscreen div:nth-child(2)").after($(".inscreen div:nth-child(1)"));
 		alert("hello world");
 	});
 	
