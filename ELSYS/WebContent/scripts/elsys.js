@@ -19,8 +19,19 @@ $(document).ready(function() {
 		dataType: "json"
 	}).then(function(response) {
 		for(var i = 0; i < 5; i++){
-			$("#posts").append("<li>"+ response[i].body +"</li>");
+			$("#posts").append("<li>"+ response[i].body +"</li>")
+			.append("<button id=\ " + response[i].id + " class=delete" + ">Delete</button>");
 		};
+	}).then(function(){
+		$(".delete").click(function() {
+			var idButton = $(this).attr("id");
+			$.ajax(ENDPOINT + "/" + idButton, {
+				method: "DELETE",
+				dataType: "json"
+			}).then(function(response){
+				alert("deleting");
+			});
+		});
 	});
 	
 	$("#addbutton").click(function(){
