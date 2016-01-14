@@ -7,6 +7,7 @@ $(document).ready(function() {
 	$("#footer").append("<div id = dynamiccontent>");
 	$("#dynamiccontent").append("<input id=textinput>");
 	$("#dynamiccontent").append("<button id=addbutton>Button</button>");
+	$("#dynamiccontent").append("<ul id=posts>");
 	
 	//alert("Under Construction!");
 });
