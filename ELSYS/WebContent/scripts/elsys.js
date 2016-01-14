@@ -8,6 +8,9 @@ $(document).ready(function() {
 	$("#dynamiccontent").append("<input id=textinput>");
 	$("#dynamiccontent").append("<button id=addbutton>Button</button>");
 	$("#dynamiccontent").append("<ul id=posts>");
+	$("#menu-item-1234").click(function(){
+		alert("hello world");
+	});
 	
 	//alert("Under Construction!");
 });
