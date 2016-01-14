@@ -26,6 +26,16 @@ $(document).ready(function() {
 	$("#addbutton").click(function(){
 		if($("#textinput").val() == 0){
 			alert("you must enter text")
+		}else{
+			$.ajax(ENDPOINT, {
+				method: "POST",
+				contentType: "application/json; charset=utf-8",
+				data: JSON.stringify({
+					userId: 10,
+					title: "POST",
+					body: $("#textinput").val()}),
+				dataType: "json"
+			});
 		};
 	});
 	
