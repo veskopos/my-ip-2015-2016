@@ -22,15 +22,16 @@ $(document).ready(function() {
 			$("#posts").append("<li>"+ response[i].body +"</li>")
 			.append("<button id=\ " + response[i].id + " class=delete" + ">Delete</button>");
 		};
-	}).then(function(){
 		$(".delete").click(function() {
-			var idButton = $(this).attr("id");
-			$.ajax(ENDPOINT + "/" + idButton, {
-				method: "DELETE",
-				dataType: "json"
-			}).then(function(response){
-				alert("deleting");
-			});
+			if(confirm("Deleting "+response[i].body+"!")){
+				var idButton = $(this).attr("id");
+				$.ajax(ENDPOINT + "/" + idButton, {
+					method: "DELETE",
+					dataType: "json"
+				}).then(function(response){
+					alert("Deleted!");
+				});		
+			};
 		});
 	});
 	
