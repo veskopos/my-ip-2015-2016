@@ -100,6 +100,7 @@ $(document).ready(function() {
 			method: "GET",
 			dataType: "json"
 		}).then(function(response){
+			$("#posts").empty();
 			for(var i = 0; i < response.length; i++){
 				$("#posts").append($("<li/>").text(response[i].body));
 			};
