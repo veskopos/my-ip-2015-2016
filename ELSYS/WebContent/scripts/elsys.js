@@ -58,5 +58,7 @@ $(document).ready(function() {
 		};
 	});
 	
+	$("#posts").before("<input />");
+	
 	//alert("Under Construction!");
 });
