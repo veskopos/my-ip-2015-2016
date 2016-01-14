@@ -35,6 +35,13 @@ $(document).ready(function() {
 					title: "POST",
 					body: $("#textinput").val()}),
 				dataType: "json"
+			}).then(function(response) {
+				$.ajax(ENDPOINT + "/" + (response.id), {
+					method: "GET",
+					dataType: "json"
+				}).then(function(response1) {
+					$("#posts").append("<li>"+ response1.body +"</li>");
+				});
 			});
 		};
 	});
