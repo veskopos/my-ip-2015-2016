@@ -23,5 +23,11 @@ $(document).ready(function() {
 		};
 	});
 	
+	$("#addbutton").click(function(){
+		if($("#textinput").val() == 0){
+			alert("you must enter text")
+		};
+	});
+	
 	//alert("Under Construction!");
 });
