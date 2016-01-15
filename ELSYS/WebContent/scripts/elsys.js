@@ -35,22 +35,21 @@ $(document).ready(function() {
 			var posts = $("<li />").text(response[i].body);
 			$("#posts").append(posts);
 		};
-		$(document).on("click", ".deleting", function(){
-			if(confirm("Deleting "+response[i].body+"!")){
-				deleting(this);
-			};
-		});
-	});
+	});	
 	
-	function deleting(asd){
-		var idButton = $(asd).attr("id");
-		$.ajax(ENDPOINT + "/" + idButton, {
-			method: "DELETE",
-			dataType: "json"
-		}).then(function(response){
-			$("ul li:nth-child(" + idButton + ")").remove();
-			alert("Deleted!");
-		});	
+	function deleting(data){
+		 $("#posts").append($("<li/>").text(data.body).append($("<button/>").text("X").click(function(){
+				if(confirm("Deleting "+data.body+"!")){
+					$.ajax(ENDPOINT + "/" + data.id, {
+						method: "DELETE",
+						dataType: "json",
+						success: function() { 
+							$("#posts li:contains("+data.body+")").remove();
+							alert("Deleted!");
+						}
+					});
+				};
+		})));
 	};
 	
 	var responseGet = 5;
@@ -67,33 +66,19 @@ $(document).ready(function() {
 					body: $("#textinput").val()}),
 				dataType: "json"
 			}).then(function(response) {
-					$.ajax(ENDPOINT+"/"+(response.id-100+responseGet), {
+				$.ajax(ENDPOINT+"/"+(response.id-100+responseGet), {
 					method: "GET",
 					dataType: "json",
 					success: function() { 
 						responseGet++;
-						}
-					}) .then(function(response1) {
-						var posts = $("<li />");
-							posts.text(response1.body);
-						var button = $("<button />");
-							button.addClass("deleting");
-							button.attr("id", response1.id);
-							button.text("X");
-						$(posts).append(button);
-						$("#posts").append(posts); 
-
-					$(document).on("click", ".deleting", function(){
-					//$(".deleting").click(function() {
-						if(confirm("Deleting "+response1.body+"!")){
-							deleting(this); 
-						};
-					});
+					}
+				}).then(function(response1) { 
+					deleting(response1);
 				});
 			});
-		};
+		}
 	});
-	
+
 	$("#posts").before($("<input id=userId></input>").change(function(){
 		alert($("#userId").val());
 		$.ajax(ENDPOINT + "?userId=" + $(this).val() , {
@@ -101,9 +86,7 @@ $(document).ready(function() {
 			dataType: "json"
 		}).then(function(response){
 			$("#posts").empty();
-			for(var i = 0; i < response.length; i++){
-				$("#posts").append($("<li/>").text(response[i].body));
-			};
+			$.each(response, function() {deleting(this);});
 		});
 	}));
 
